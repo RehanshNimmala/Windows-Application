@@ -1,0 +1,10 @@
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\bin\Debug\NimmalaAssign2.exe.config
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\bin\Debug\NimmalaAssign2.exe
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\bin\Debug\NimmalaAssign2.pdb
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.csproj.AssemblyReference.cache
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.RoomReservation.resources
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.Properties.Resources.resources
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.csproj.GenerateResource.cache
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.csproj.CoreCompileInputs.cache
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.exe
+C:\MS\Spring-2022\C#-Prereq-Subject\Assignemnts\NimmalaAssign2\NimmalaAssign2\obj\Debug\NimmalaAssign2.pdb
