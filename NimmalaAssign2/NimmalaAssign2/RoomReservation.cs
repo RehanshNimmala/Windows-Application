@@ -104,5 +104,10 @@ namespace NimmalaAssign2
 
 
         }
+
+        private void txtCustomerName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
