@@ -48,7 +48,7 @@ namespace NimmalaAssign2
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Location = new System.Drawing.Point(102, 80);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(104, 16);
+            this.lblCustomerName.Size = new System.Drawing.Size(109, 17);
             this.lblCustomerName.TabIndex = 0;
             this.lblCustomerName.Text = "Customer Name";
             // 
@@ -57,7 +57,7 @@ namespace NimmalaAssign2
             this.lblNumberOfHours.AutoSize = true;
             this.lblNumberOfHours.Location = new System.Drawing.Point(102, 129);
             this.lblNumberOfHours.Name = "lblNumberOfHours";
-            this.lblNumberOfHours.Size = new System.Drawing.Size(105, 16);
+            this.lblNumberOfHours.Size = new System.Drawing.Size(114, 17);
             this.lblNumberOfHours.TabIndex = 1;
             this.lblNumberOfHours.Text = "Number of hours";
             // 
@@ -76,6 +76,7 @@ namespace NimmalaAssign2
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(150, 22);
             this.txtCustomerName.TabIndex = 3;
+            this.txtCustomerName.TextChanged += new System.EventHandler(this.txtCustomerName_TextChanged);
             // 
             // txtNumberOfHours
             // 
@@ -114,12 +115,13 @@ namespace NimmalaAssign2
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnReset.Location = new System.Drawing.Point(509, 129);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(195, 23);
             this.btnReset.TabIndex = 8;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnExit
@@ -149,7 +151,7 @@ namespace NimmalaAssign2
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(551, 338);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.Size = new System.Drawing.Size(0, 17);
             this.label1.TabIndex = 11;
             // 
             // RoomReservation
