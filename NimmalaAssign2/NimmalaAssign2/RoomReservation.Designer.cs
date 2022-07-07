@@ -115,7 +115,7 @@ namespace NimmalaAssign2
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnReset.BackColor = System.Drawing.SystemColors.Control;
             this.btnReset.Location = new System.Drawing.Point(509, 129);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(195, 23);
@@ -126,8 +126,8 @@ namespace NimmalaAssign2
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExit.ForeColor = System.Drawing.Color.Red;
+            this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
             this.btnExit.Location = new System.Drawing.Point(509, 173);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(195, 23);
