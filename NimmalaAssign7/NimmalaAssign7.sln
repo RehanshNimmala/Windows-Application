@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NimmalaAssign7", "NimmalaAssign7\NimmalaAssign7.csproj", "{C1A10B6F-B3F2-4D51-9A35-81A2D492103E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1A10B6F-B3F2-4D51-9A35-81A2D492103E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A10B6F-B3F2-4D51-9A35-81A2D492103E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A10B6F-B3F2-4D51-9A35-81A2D492103E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A10B6F-B3F2-4D51-9A35-81A2D492103E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CF0DFD3-A84C-4D15-B86C-857543D0E86B}
+	EndGlobalSection
+EndGlobal
