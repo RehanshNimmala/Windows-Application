@@ -146,12 +146,13 @@ namespace NimmalaAssign2
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Location = new System.Drawing.Point(509, 306);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(195, 46);
             this.button1.TabIndex = 11;
             this.button1.Text = "Test";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // RoomReservation
             // 
