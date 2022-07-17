@@ -124,12 +124,13 @@ namespace NimmalaAssign2
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnExit.Location = new System.Drawing.Point(509, 173);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(195, 23);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDisplayReservationReport
