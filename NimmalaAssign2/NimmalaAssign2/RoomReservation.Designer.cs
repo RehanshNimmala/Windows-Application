@@ -29,6 +29,7 @@ namespace NimmalaAssign2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.lblNumberOfHours = new System.Windows.Forms.Label();
             this.lblRoomNumber = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@ namespace NimmalaAssign2
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDisplayReservationReport = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.erpCustomerName = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.erpCustomerName)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCustomerName
@@ -76,6 +79,7 @@ namespace NimmalaAssign2
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.Size = new System.Drawing.Size(150, 22);
             this.txtCustomerName.TabIndex = 3;
+            this.txtCustomerName.Validating += new System.ComponentModel.CancelEventHandler(this.validation);
             // 
             // txtNumberOfHours
             // 
@@ -155,6 +159,10 @@ namespace NimmalaAssign2
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // erpCustomerName
+            // 
+            this.erpCustomerName.ContainerControl = this;
+            // 
             // RoomReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -174,6 +182,7 @@ namespace NimmalaAssign2
             this.Controls.Add(this.lblCustomerName);
             this.Name = "RoomReservation";
             this.Text = "Community center Reservation";
+            ((System.ComponentModel.ISupportInitialize)(this.erpCustomerName)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +202,7 @@ namespace NimmalaAssign2
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnDisplayReservationReport;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ErrorProvider erpCustomerName;
     }
 }
 

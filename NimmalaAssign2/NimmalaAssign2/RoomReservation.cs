@@ -41,14 +41,14 @@ namespace NimmalaAssign2
 
 
                 // input
-
+                
                 customerName = txtCustomerName.Text;
                 numberOfHours = int.Parse(txtNumberOfHours.Text);
                 roomNumber = int.Parse(txtRoomNumber.Text);
 
 
                 //processing
-
+               
                 rentalCharge = numberOfHours * HOUR_CHARGE;
                 totalCharge = rentalCharge + RESERVATION_FEE;
                 totalRevenue = totalRevenue + totalCharge;
@@ -108,6 +108,20 @@ namespace NimmalaAssign2
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("It's working");
+        }
+
+        private void validation(object sender, CancelEventArgs e)
+        {
+            string customerName = txtCustomerName.Text;
+            if (customerName == "")
+            {
+                //txtCustomerName.Focus();
+                erpCustomerName.SetError(txtCustomerName, "please enter Input");
+               
+                
+
+
+            }
         }
     }
 }
