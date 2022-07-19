@@ -43,7 +43,9 @@ namespace NimmalaAssign2
             this.btnDisplayReservationReport = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.erpCustomerName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpNumberOfHours = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.erpCustomerName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNumberOfHours)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCustomerName
@@ -88,6 +90,7 @@ namespace NimmalaAssign2
             this.txtNumberOfHours.Name = "txtNumberOfHours";
             this.txtNumberOfHours.Size = new System.Drawing.Size(150, 22);
             this.txtNumberOfHours.TabIndex = 4;
+            this.txtNumberOfHours.Validating += new System.ComponentModel.CancelEventHandler(this.txtNumberOfHours_validating);
             // 
             // txtRoomNumber
             // 
@@ -163,6 +166,10 @@ namespace NimmalaAssign2
             // 
             this.erpCustomerName.ContainerControl = this;
             // 
+            // erpNumberOfHours
+            // 
+            this.erpNumberOfHours.ContainerControl = this;
+            // 
             // RoomReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,6 +190,7 @@ namespace NimmalaAssign2
             this.Name = "RoomReservation";
             this.Text = "Community center Reservation";
             ((System.ComponentModel.ISupportInitialize)(this.erpCustomerName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpNumberOfHours)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,6 +211,7 @@ namespace NimmalaAssign2
         private System.Windows.Forms.Button btnDisplayReservationReport;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider erpCustomerName;
+        private System.Windows.Forms.ErrorProvider erpNumberOfHours;
     }
 }
 

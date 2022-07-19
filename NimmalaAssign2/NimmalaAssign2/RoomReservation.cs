@@ -112,15 +112,44 @@ namespace NimmalaAssign2
 
         private void validation(object sender, CancelEventArgs e)
         {
-            string customerName = txtCustomerName.Text;
-            if (customerName == "")
+            if (txtCustomerName.Text.Length > 0)
             {
-                //txtCustomerName.Focus();
-                erpCustomerName.SetError(txtCustomerName, "please enter Input");
+                erpNumberOfHours.SetError(txtCustomerName, "");
+
+            }
+            else
+            {
+                erpNumberOfHours.SetError(txtCustomerName, "Enter valid Customer Name");
+                txtCustomerName.Focus();
+                txtCustomerName.SelectAll();
+                return;
+            }
+            //string customerName = txtCustomerName.Text;
+            //if (customerName == "")
+            //{
+            //    //txtCustomerName.Focus();
+            //    erpCustomerName.SetError(txtCustomerName, "please enter Input");
                
                 
 
 
+            //}
+        }
+
+        private void txtNumberOfHours_validating(object sender, CancelEventArgs e)
+        {
+            // Verifying the Correct input
+            if (txtNumberOfHours.Text.Length > 0)
+            {
+                erpNumberOfHours.SetError(txtNumberOfHours, "");
+
+            }
+            else
+            {
+                erpNumberOfHours.SetError(txtNumberOfHours, "Enter valid Hours");
+                txtNumberOfHours.Focus();
+                txtNumberOfHours.SelectAll();
+                return;
             }
         }
     }
