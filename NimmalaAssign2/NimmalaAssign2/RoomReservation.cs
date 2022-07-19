@@ -152,5 +152,23 @@ namespace NimmalaAssign2
                 return;
             }
         }
+
+        private void erpRoomNumber_validating(object sender, CancelEventArgs e)
+        {
+            // Verifying the Correct input
+            if (txtRoomNumber.Text.Length > 0)
+            {
+                erpRoomNumber.SetError(txtRoomNumber, "");
+
+            }
+            else
+            {
+                erpRoomNumber.SetError(txtRoomNumber, "Enter valid Hours");
+                txtRoomNumber.Focus();
+                txtRoomNumber.SelectAll();
+                return;
+            }
+
+        }
     }
 }
