@@ -41,7 +41,6 @@ namespace NimmalaAssign2
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDisplayReservationReport = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.erpCustomerName = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpNumberOfHours = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpRoomNumber = new System.Windows.Forms.ErrorProvider(this.components);
@@ -154,17 +153,6 @@ namespace NimmalaAssign2
             this.btnDisplayReservationReport.UseVisualStyleBackColor = true;
             this.btnDisplayReservationReport.Click += new System.EventHandler(this.btnDisplayReservationReport_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(509, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 46);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Test";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // erpCustomerName
             // 
             this.erpCustomerName.ContainerControl = this;
@@ -182,7 +170,6 @@ namespace NimmalaAssign2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDisplayReservationReport);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
@@ -217,7 +204,6 @@ namespace NimmalaAssign2
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnDisplayReservationReport;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider erpCustomerName;
         private System.Windows.Forms.ErrorProvider erpNumberOfHours;
         private System.Windows.Forms.ErrorProvider erpRoomNumber;
