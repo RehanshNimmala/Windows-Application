@@ -113,12 +113,13 @@ namespace NimmalaAssign2
             // 
             // btnCompleteReservation
             // 
+            this.btnCompleteReservation.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCompleteReservation.Location = new System.Drawing.Point(509, 77);
             this.btnCompleteReservation.Name = "btnCompleteReservation";
             this.btnCompleteReservation.Size = new System.Drawing.Size(195, 25);
             this.btnCompleteReservation.TabIndex = 7;
             this.btnCompleteReservation.Text = "Complete Reservation";
-            this.btnCompleteReservation.UseVisualStyleBackColor = true;
+            this.btnCompleteReservation.UseVisualStyleBackColor = false;
             this.btnCompleteReservation.Click += new System.EventHandler(this.btnCompleteReservation_Click);
             // 
             // btnReset
