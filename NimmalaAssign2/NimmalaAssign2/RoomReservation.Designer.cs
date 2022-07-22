@@ -146,12 +146,13 @@ namespace NimmalaAssign2
             // 
             // btnDisplayReservationReport
             // 
+            this.btnDisplayReservationReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDisplayReservationReport.Location = new System.Drawing.Point(509, 221);
             this.btnDisplayReservationReport.Name = "btnDisplayReservationReport";
             this.btnDisplayReservationReport.Size = new System.Drawing.Size(220, 52);
             this.btnDisplayReservationReport.TabIndex = 10;
             this.btnDisplayReservationReport.Text = "Display Reservations Report";
-            this.btnDisplayReservationReport.UseVisualStyleBackColor = true;
+            this.btnDisplayReservationReport.UseVisualStyleBackColor = false;
             this.btnDisplayReservationReport.Click += new System.EventHandler(this.btnDisplayReservationReport_Click);
             // 
             // erpCustomerName
