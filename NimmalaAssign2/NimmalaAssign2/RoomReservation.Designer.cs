@@ -113,7 +113,7 @@ namespace NimmalaAssign2
             // 
             // btnCompleteReservation
             // 
-            this.btnCompleteReservation.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCompleteReservation.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCompleteReservation.Location = new System.Drawing.Point(509, 77);
             this.btnCompleteReservation.Name = "btnCompleteReservation";
             this.btnCompleteReservation.Size = new System.Drawing.Size(195, 25);
