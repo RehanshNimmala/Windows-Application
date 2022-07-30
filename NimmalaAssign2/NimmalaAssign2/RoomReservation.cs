@@ -120,6 +120,8 @@ namespace NimmalaAssign2
                 txtCustomerName.SelectAll();
                 return;
             }
+
+
             //string customerName = txtCustomerName.Text;
             //if (customerName == "")
             //{
@@ -131,6 +133,8 @@ namespace NimmalaAssign2
 
             //}
         }
+
+
 
         private void txtNumberOfHours_validating(object sender, CancelEventArgs e)
         {
