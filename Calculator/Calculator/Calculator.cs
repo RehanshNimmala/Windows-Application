@@ -21,5 +21,11 @@ namespace Calculator
         {
             txtResults.Text = txtResults.Text + "1";
         }
+
+        private void btnTwo_Click(object sender, EventArgs e)
+        {
+            txtResults.Text = txtResults.Text + "2";
+
+        }
     }
 }
