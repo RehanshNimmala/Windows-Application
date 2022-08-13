@@ -27,5 +27,11 @@ namespace Calculator
             txtResults.Text = txtResults.Text + "2";
 
         }
+
+        private void btnThree_Click(object sender, EventArgs e)
+        {
+            txtResults.Text = txtResults.Text + "3";
+
+        }
     }
 }
