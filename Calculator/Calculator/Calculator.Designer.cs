@@ -37,6 +37,7 @@
             this.btnSix = new System.Windows.Forms.Button();
             this.btnFive = new System.Windows.Forms.Button();
             this.btnNine = new System.Windows.Forms.Button();
+            this.txtResults = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnOne
@@ -47,6 +48,7 @@
             this.btnOne.TabIndex = 0;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = true;
+            this.btnOne.Click += new System.EventHandler(this.btnOne_Click);
             // 
             // btnTwo
             // 
@@ -120,11 +122,22 @@
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = true;
             // 
+            // txtResults
+            // 
+            this.txtResults.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtResults.Location = new System.Drawing.Point(1, 85);
+            this.txtResults.Name = "txtResults";
+            this.txtResults.Size = new System.Drawing.Size(251, 22);
+            this.txtResults.TabIndex = 10;
+            this.txtResults.Text = "0";
+            this.txtResults.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 385);
+            this.ClientSize = new System.Drawing.Size(264, 385);
+            this.Controls.Add(this.txtResults);
             this.Controls.Add(this.btnNine);
             this.Controls.Add(this.btnEight);
             this.Controls.Add(this.btnSeven);
@@ -139,6 +152,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,6 +167,7 @@
         private System.Windows.Forms.Button btnSix;
         private System.Windows.Forms.Button btnFive;
         private System.Windows.Forms.Button btnNine;
+        private System.Windows.Forms.TextBox txtResults;
     }
 }
 
