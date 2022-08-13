@@ -17,6 +17,21 @@ namespace Calculator
             InitializeComponent();
         }
 
-       
+        private void btnOne_Click(object sender, EventArgs e)
+        {
+            txtResults.Text = txtResults.Text + "1";
+        }
+
+        private void btnTwo_Click(object sender, EventArgs e)
+        {
+            txtResults.Text = txtResults.Text + "2";
+
+        }
+
+        private void btnThree_Click(object sender, EventArgs e)
+        {
+            txtResults.Text = txtResults.Text + "3";
+
+        }
     }
 }
