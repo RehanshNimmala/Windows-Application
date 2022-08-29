@@ -36,6 +36,7 @@
             this.convertButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.resultLabel = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,11 +118,22 @@
             this.resultLabel.Size = new System.Drawing.Size(372, 263);
             this.resultLabel.TabIndex = 5;
             // 
+            // resetButton
+            // 
+            this.resetButton.Location = new System.Drawing.Point(45, 429);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(243, 62);
+            this.resetButton.TabIndex = 6;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 542);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.convertButton);
@@ -147,5 +159,6 @@
         private Button convertButton;
         private Button exitButton;
         private Label resultLabel;
+        private Button resetButton;
     }
 }
