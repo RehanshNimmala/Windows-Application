@@ -11,5 +11,34 @@ namespace TempConverterPractise
         {
             this.Close();
         }
+
+        private void convertButton_Click(object sender, EventArgs e)
+        {
+            decimal temperature=decimal.Parse(temperatureTextBox.Text);
+            decimal celcius;
+            decimal farenhiet;
+            TempConverter tempConverter = new TempConverter();
+            string result;
+
+            if (farenhietRadioButton.Checked == true) //user entered farenhiet, So Fto C method shall be called from TempConverter class
+            {
+                celcius = tempConverter.FtoC(temperature);
+                result = temperature.ToString("N3") + "degree Farenheits=" + celcius.ToString("N3") + " degree Celcius";
+                resultLabel.Text = result;// Displaying the result in label
+            }
+            else if (celciusRadioButton.Checked == true)// User entered celcius, So CtoF method to be called from class TempConverter
+            {
+                farenhiet = tempConverter.CtoF(temperature);
+                result = temperature.ToString("N3") + "degree celcius=" + farenhiet.ToString("N3") + " degree Farenheits";
+
+                resultLabel.Text = result;// Displaying the result in label
+            }
+            else
+            {
+                //If radio button not checked
+                resultLabel.Text = "Please select the celcius or Farenhiet";
+            }// End of radio button sction
+
+        }
     }
 }
