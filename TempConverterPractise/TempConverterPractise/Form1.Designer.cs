@@ -31,8 +31,8 @@
             this.temperatureLabel = new System.Windows.Forms.Label();
             this.temperatureTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.farenhietRadioButton = new System.Windows.Forms.RadioButton();
+            this.celciusRadioButton = new System.Windows.Forms.RadioButton();
             this.convertButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.resultLabel = new System.Windows.Forms.Label();
@@ -58,8 +58,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.farenhietRadioButton);
+            this.groupBox1.Controls.Add(this.celciusRadioButton);
             this.groupBox1.Location = new System.Drawing.Point(45, 118);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(250, 125);
@@ -67,27 +67,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Temperature";
             // 
-            // radioButton2
+            // farenhietRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(21, 83);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(117, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.farenhietRadioButton.AutoSize = true;
+            this.farenhietRadioButton.Location = new System.Drawing.Point(21, 83);
+            this.farenhietRadioButton.Name = "farenhietRadioButton";
+            this.farenhietRadioButton.Size = new System.Drawing.Size(90, 24);
+            this.farenhietRadioButton.TabIndex = 1;
+            this.farenhietRadioButton.TabStop = true;
+            this.farenhietRadioButton.Text = "Farenhiet";
+            this.farenhietRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // celciusRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(21, 26);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(117, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.celciusRadioButton.AutoSize = true;
+            this.celciusRadioButton.Location = new System.Drawing.Point(21, 26);
+            this.celciusRadioButton.Name = "celciusRadioButton";
+            this.celciusRadioButton.Size = new System.Drawing.Size(76, 24);
+            this.celciusRadioButton.TabIndex = 0;
+            this.celciusRadioButton.TabStop = true;
+            this.celciusRadioButton.Text = "Celcius";
+            this.celciusRadioButton.UseVisualStyleBackColor = true;
             // 
             // convertButton
             // 
@@ -97,6 +97,7 @@
             this.convertButton.TabIndex = 3;
             this.convertButton.Text = "Convert";
             this.convertButton.UseVisualStyleBackColor = true;
+            this.convertButton.Click += new System.EventHandler(this.convertButton_Click);
             // 
             // exitButton
             // 
@@ -141,8 +142,8 @@
         private Label temperatureLabel;
         private TextBox temperatureTextBox;
         private GroupBox groupBox1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton farenhietRadioButton;
+        private RadioButton celciusRadioButton;
         private Button convertButton;
         private Button exitButton;
         private Label resultLabel;
