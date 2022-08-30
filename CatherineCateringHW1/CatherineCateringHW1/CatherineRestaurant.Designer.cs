@@ -36,20 +36,20 @@
             this.chickenRadioButton = new System.Windows.Forms.RadioButton();
             this.primeribRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBoxOpenBar = new System.Windows.Forms.CheckBox();
             this.checkBoxWine = new System.Windows.Forms.CheckBox();
+            this.checkBoxOpenBar = new System.Windows.Forms.CheckBox();
             this.calculateButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.totalAmountDue = new System.Windows.Forms.Label();
+            this.totalGuestsLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.preTaxTip = new System.Windows.Forms.Label();
             this.amountDueLabel = new System.Windows.Forms.Label();
-            this.totalGuestsLabel = new System.Windows.Forms.Label();
-            this.totalAmountDue = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -139,16 +139,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Bar";
             // 
-            // checkBoxOpenBar
-            // 
-            this.checkBoxOpenBar.AutoSize = true;
-            this.checkBoxOpenBar.Location = new System.Drawing.Point(6, 29);
-            this.checkBoxOpenBar.Name = "checkBoxOpenBar";
-            this.checkBoxOpenBar.Size = new System.Drawing.Size(108, 26);
-            this.checkBoxOpenBar.TabIndex = 0;
-            this.checkBoxOpenBar.Text = "Open Bar";
-            this.checkBoxOpenBar.UseVisualStyleBackColor = true;
-            // 
             // checkBoxWine
             // 
             this.checkBoxWine.AutoSize = true;
@@ -159,6 +149,16 @@
             this.checkBoxWine.Text = "Wine";
             this.checkBoxWine.UseVisualStyleBackColor = true;
             // 
+            // checkBoxOpenBar
+            // 
+            this.checkBoxOpenBar.AutoSize = true;
+            this.checkBoxOpenBar.Location = new System.Drawing.Point(6, 29);
+            this.checkBoxOpenBar.Name = "checkBoxOpenBar";
+            this.checkBoxOpenBar.Size = new System.Drawing.Size(108, 26);
+            this.checkBoxOpenBar.TabIndex = 0;
+            this.checkBoxOpenBar.Text = "Open Bar";
+            this.checkBoxOpenBar.UseVisualStyleBackColor = true;
+            // 
             // calculateButton
             // 
             this.calculateButton.Location = new System.Drawing.Point(46, 279);
@@ -167,6 +167,7 @@
             this.calculateButton.TabIndex = 5;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearButton
             // 
@@ -189,7 +190,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(42, 345);
+            this.label1.Location = new System.Drawing.Point(12, 352);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(239, 22);
             this.label1.TabIndex = 8;
@@ -198,7 +199,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 384);
+            this.label2.Location = new System.Drawing.Point(12, 390);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(235, 22);
             this.label2.TabIndex = 9;
@@ -217,55 +218,59 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Summary";
             // 
-            // label3
+            // totalAmountDue
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 22);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Total Number of Guests";
+            this.totalAmountDue.AutoSize = true;
+            this.totalAmountDue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.totalAmountDue.Location = new System.Drawing.Point(172, 70);
+            this.totalAmountDue.Name = "totalAmountDue";
+            this.totalAmountDue.Size = new System.Drawing.Size(2, 24);
+            this.totalAmountDue.TabIndex = 3;
+            // 
+            // totalGuestsLabel
+            // 
+            this.totalGuestsLabel.AutoSize = true;
+            this.totalGuestsLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.totalGuestsLabel.Location = new System.Drawing.Point(223, 35);
+            this.totalGuestsLabel.Name = "totalGuestsLabel";
+            this.totalGuestsLabel.Size = new System.Drawing.Size(2, 24);
+            this.totalGuestsLabel.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 65);
+            this.label4.Location = new System.Drawing.Point(2, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 22);
             this.label4.TabIndex = 1;
             this.label4.Text = "Total Amount Due:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(198, 22);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Total Number of Guests";
+            // 
             // preTaxTip
             // 
             this.preTaxTip.AutoSize = true;
+            this.preTaxTip.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.preTaxTip.Location = new System.Drawing.Point(288, 350);
             this.preTaxTip.Name = "preTaxTip";
-            this.preTaxTip.Size = new System.Drawing.Size(0, 22);
+            this.preTaxTip.Size = new System.Drawing.Size(2, 24);
             this.preTaxTip.TabIndex = 11;
             // 
             // amountDueLabel
             // 
             this.amountDueLabel.AutoSize = true;
-            this.amountDueLabel.Location = new System.Drawing.Point(284, 389);
+            this.amountDueLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.amountDueLabel.Location = new System.Drawing.Point(283, 390);
             this.amountDueLabel.Name = "amountDueLabel";
-            this.amountDueLabel.Size = new System.Drawing.Size(0, 22);
+            this.amountDueLabel.Size = new System.Drawing.Size(2, 24);
             this.amountDueLabel.TabIndex = 12;
-            // 
-            // totalGuestsLabel
-            // 
-            this.totalGuestsLabel.AutoSize = true;
-            this.totalGuestsLabel.Location = new System.Drawing.Point(223, 35);
-            this.totalGuestsLabel.Name = "totalGuestsLabel";
-            this.totalGuestsLabel.Size = new System.Drawing.Size(0, 22);
-            this.totalGuestsLabel.TabIndex = 2;
-            // 
-            // totalAmountDue
-            // 
-            this.totalAmountDue.AutoSize = true;
-            this.totalAmountDue.Location = new System.Drawing.Point(172, 70);
-            this.totalAmountDue.Name = "totalAmountDue";
-            this.totalAmountDue.Size = new System.Drawing.Size(0, 22);
-            this.totalAmountDue.TabIndex = 3;
             // 
             // CatherineRestaurant
             // 
