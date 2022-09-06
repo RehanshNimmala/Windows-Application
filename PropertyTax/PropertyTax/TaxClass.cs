@@ -15,8 +15,10 @@ namespace PropertyTax
 
         public decimal CalculateTax(decimal propertyValue)
         {
-            return propertyValue* TAX_RATE_DECIMAL;
-        }
+            decimal taxAmount;
+            taxAmount= propertyValue* TAX_RATE_DECIMAL;
+            return Math.Round(taxAmount, 2);
+        }//End calculateTax
 
     }
 }
