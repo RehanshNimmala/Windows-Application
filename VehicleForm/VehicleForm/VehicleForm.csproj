@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDrivable.cs" />
+    <Compile Include="MotorCycleClass.cs" />
+    <Compile Include="RaceCarClass.cs" />
+    <Compile Include="Truck.cs" />
     <Compile Include="VehicleClass.cs" />
     <Compile Include="VehicleForm.cs">
       <SubType>Form</SubType>

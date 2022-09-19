@@ -44,6 +44,7 @@
             this.sedanButton.TabIndex = 0;
             this.sedanButton.Text = "Sedan";
             this.sedanButton.UseVisualStyleBackColor = true;
+            this.sedanButton.Click += new System.EventHandler(this.sedanButton_Click);
             // 
             // raceCarButton
             // 
@@ -53,6 +54,7 @@
             this.raceCarButton.TabIndex = 1;
             this.raceCarButton.Text = "Race Car";
             this.raceCarButton.UseVisualStyleBackColor = true;
+            this.raceCarButton.Click += new System.EventHandler(this.raceCarButton_Click);
             // 
             // motorCycleButton
             // 
@@ -62,6 +64,7 @@
             this.motorCycleButton.TabIndex = 2;
             this.motorCycleButton.Text = "Motor Cycle";
             this.motorCycleButton.UseVisualStyleBackColor = true;
+            this.motorCycleButton.Click += new System.EventHandler(this.motorCycleButton_Click);
             // 
             // truckButton
             // 
@@ -71,6 +74,7 @@
             this.truckButton.TabIndex = 3;
             this.truckButton.Text = "Truck";
             this.truckButton.UseVisualStyleBackColor = true;
+            this.truckButton.Click += new System.EventHandler(this.truckButton_Click);
             // 
             // exitButton
             // 
@@ -80,6 +84,7 @@
             this.exitButton.TabIndex = 4;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // resultTextBox
             // 
@@ -89,14 +94,14 @@
             this.resultTextBox.Multiline = true;
             this.resultTextBox.Name = "resultTextBox";
             this.resultTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.resultTextBox.Size = new System.Drawing.Size(437, 416);
+            this.resultTextBox.Size = new System.Drawing.Size(845, 416);
             this.resultTextBox.TabIndex = 5;
             // 
             // VehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 494);
+            this.ClientSize = new System.Drawing.Size(1158, 494);
             this.Controls.Add(this.resultTextBox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.truckButton);
