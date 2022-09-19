@@ -12,7 +12,7 @@ namespace VehicleForm
     {
         //This interface has one property and one method that returns a string and accepts two arguments.
 
-        double MaxSpeed { get; set; }
+        double MaximumSpeed { get; set; }
         string Drive(double distance, double speedLimit);
     }// end of interface
 }//End of namespace
