@@ -22,8 +22,8 @@ namespace NimmalaWeek7
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             About about = new About();
-            about.MDiParent = this;
-            about.show();
+            about.MdiParent = this;
+            about.Show();
         }
 
         private void showSingletonToolStripMenuItem_Click(object sender, EventArgs e)

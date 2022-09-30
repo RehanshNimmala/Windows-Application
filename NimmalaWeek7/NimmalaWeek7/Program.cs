@@ -16,7 +16,7 @@ namespace NimmalaWeek7
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SingletonForm());
+            Application.Run(new SingletonContainerForm());
         }
     }
 }

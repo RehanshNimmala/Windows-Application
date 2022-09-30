@@ -54,7 +54,7 @@
             // 
             this.helloButton.Location = new System.Drawing.Point(106, 132);
             this.helloButton.Name = "helloButton";
-            this.helloButton.Size = new System.Drawing.Size(75, 23);
+            this.helloButton.Size = new System.Drawing.Size(169, 52);
             this.helloButton.TabIndex = 2;
             this.helloButton.Text = "Say Hello";
             this.helloButton.UseVisualStyleBackColor = true;
@@ -63,7 +63,7 @@
             // helloLabel
             // 
             this.helloLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.helloLabel.Location = new System.Drawing.Point(116, 178);
+            this.helloLabel.Location = new System.Drawing.Point(106, 214);
             this.helloLabel.Name = "helloLabel";
             this.helloLabel.Size = new System.Drawing.Size(332, 23);
             this.helloLabel.TabIndex = 3;
@@ -72,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(577, 291);
             this.Controls.Add(this.helloLabel);
             this.Controls.Add(this.helloButton);
             this.Controls.Add(this.nameTextBox);
