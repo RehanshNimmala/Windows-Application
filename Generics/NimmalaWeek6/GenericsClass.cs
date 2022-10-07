@@ -45,7 +45,7 @@ namespace NimmalaWeek6
             outputLabel.Text = "";
             foreach (double  doubleElement in  myDoubleClass.GenericArray)
             {
-                //call the eneric method to display the result
+                //call the generic method to display the result
                 LabelWriter<double>(doubleElement);
             }
         }//double button
