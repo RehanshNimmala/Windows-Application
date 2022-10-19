@@ -39,7 +39,7 @@ namespace NimmalaWeek10
             MySquareDelegate mySquareDelegate = new MySquareDelegate(FindSquare);
 
             //call /invole the delegates:
-            myDelegate("Hello from Naveen--myDelegate");
+            myDelegate("Hello from Naveen-myDelegate");
             myDelegate2("How are you--myDelegate2");
             myDelegateAnon("Hello from Anonymous Delegate");
             myDelegateLambda("Hello from lambda");
@@ -48,23 +48,24 @@ namespace NimmalaWeek10
             //multicast delegate
 
             var myMulticastdelegate = myDelegate + myDelegate2;
-            myMulticastdelegate("Hello from multocast delegate");
+            myMulticastdelegate("Hello from multicast delegate");
 
             //creating and usinf a lambda
 
             List<string> myList = new List<string>();
 
-            myDelegate($"Enter input to create list and find the word/input smallest number of letter using lambda");
+            myDelegate($"Enter input to create list and find the word/input smallest number of letter using lambdaexpression:Press Enter to Continue and Escape to Exit");
 
             //loop to accept the numbers for list
             while (Console.ReadKey().Key != ConsoleKey.Escape)
             {
+                //add numbers entered to list:
                 myList.Add(Console.ReadLine());
                 myDelegate("Press Enter to continue and Escape to Exit");
-            }
+            }//end while
             
 
-            //finnd the smallest word using lambda
+            //finnd the smallest word using lambdaexpression
 
             int smallestWordLength = myList.Min(smallest => smallest.Length);
             string smallestWord = myList.Find(s => s.Length == smallestWordLength);
@@ -74,8 +75,9 @@ namespace NimmalaWeek10
 
 
             //Write output
-            myDelegate($"THe smallest word) is {smallestWord}with al length {smallestWordLength}");
+            myDelegate($"The smallest word is {smallestWord} with a length of {smallestWordLength}");
             myDelegate($"The longest word is {longestWord}");
+            Console.ReadLine();
         
 
         }
@@ -96,7 +98,7 @@ namespace NimmalaWeek10
         }
         public static void WriteToConsole2(string message)
         {
-            Console.WriteLine("this is console.WriteLine2 method{ message.ToUpper()}");
+            Console.WriteLine($"this is console.WriteLine2 method { message.ToUpper()}");
             Console.WriteLine("-----------");
             Console.WriteLine();
 
