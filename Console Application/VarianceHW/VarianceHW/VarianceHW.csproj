@@ -48,7 +48,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="RectangleColection.cs" />
     <Compile Include="Shape.cs" />
+    <Compile Include="ShapeDisplay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
