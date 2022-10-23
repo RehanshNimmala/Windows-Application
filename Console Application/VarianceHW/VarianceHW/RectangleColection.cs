@@ -29,6 +29,7 @@ namespace VarianceHW
         {
             get
             {
+                if (index < 0 || index > data.Length)
                 {
                     throw new ArgumentOutOfRangeException(nameof(index));
                 }
