@@ -9,9 +9,9 @@ namespace VarianceHW
     //creted by Nimmala
     //222222222222
     //Contravariant
-    interface IDisplay<inT>
+    interface IDisplay<in T>
     {
         //method
-        void Show(Task item);
+        void Show(T item);
     }
 }
