@@ -26,8 +26,8 @@ namespace CoAndContraVariances
                 Console.WriteLine(cow.AnimalName);
             }
             Console.ReadKey();
-            Console.WriteLine("Now printing from the array after.sortmethod:Contravariance");
-            cows.Sort(new AnimalNameLengthComparer());
+            Console.WriteLine("Now printing from the array after.sort method:Contravariance");
+            cows.Sort(new AnimalNameComparer());
             foreach(Cow cow in cows)
             {
                 Console.WriteLine(cow.AnimalName);
@@ -35,5 +35,21 @@ namespace CoAndContraVariances
             Console.ReadKey();
             //Contravariance example
         }//end main
-    }
-}
+
+        static void ListAnimals(IEnumerable<Animal> animals)
+        {
+            //IEnumerable <T> interface is covariant with out keyword
+            //Covariance permits a method to have derived return type than that defined by the generic type parameter of the interface.
+            foreach(Animal animal in animals)
+            {
+                Console.WriteLine(animal.ToString());
+                Console.WriteLine(animal.AnimalName.ToString());
+                //The default implementation of method To string of object returns a string representing namespace_name.object_class_name
+                //Cows variable is of the type List<Cow> which supports the IEnumerable<cow> interface.
+                //through covariance, you can pass this variable to a method that expects a paramater of the type IEnumerable<Animal>,
+                //because cow is a derived type of Animal class.
+
+            }//end foreach
+        }//End ListAnimals
+    }//End class
+}//End namespace
