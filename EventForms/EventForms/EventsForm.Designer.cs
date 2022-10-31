@@ -33,12 +33,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.goButton = new System.Windows.Forms.Button();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.nabinCheckBox = new System.Windows.Forms.CheckBox();
+            this.nawinCheckBox = new System.Windows.Forms.CheckBox();
+            this.navinCheckBox = new System.Windows.Forms.CheckBox();
+            this.naveenCheckBox = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.newCarComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,12 +81,12 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.goButton);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.nabinCheckBox);
+            this.groupBox2.Controls.Add(this.nawinCheckBox);
+            this.groupBox2.Controls.Add(this.navinCheckBox);
+            this.groupBox2.Controls.Add(this.naveenCheckBox);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.newCarComboBox);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(67, 175);
             this.groupBox2.Name = "groupBox2";
@@ -103,46 +103,47 @@
             this.goButton.TabIndex = 2;
             this.goButton.Text = "Go";
             this.goButton.UseVisualStyleBackColor = true;
+            this.goButton.Click += new System.EventHandler(this.goButton_Click);
             // 
-            // checkBox4
+            // nabinCheckBox
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(50, 243);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(65, 20);
-            this.checkBox4.TabIndex = 7;
-            this.checkBox4.Text = "Nabin";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.nabinCheckBox.AutoSize = true;
+            this.nabinCheckBox.Location = new System.Drawing.Point(50, 243);
+            this.nabinCheckBox.Name = "nabinCheckBox";
+            this.nabinCheckBox.Size = new System.Drawing.Size(65, 20);
+            this.nabinCheckBox.TabIndex = 7;
+            this.nabinCheckBox.Text = "Nabin";
+            this.nabinCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // nawinCheckBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(50, 207);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(66, 20);
-            this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Nawin";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.nawinCheckBox.AutoSize = true;
+            this.nawinCheckBox.Location = new System.Drawing.Point(50, 207);
+            this.nawinCheckBox.Name = "nawinCheckBox";
+            this.nawinCheckBox.Size = new System.Drawing.Size(66, 20);
+            this.nawinCheckBox.TabIndex = 6;
+            this.nawinCheckBox.Text = "Nawin";
+            this.nawinCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // navinCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(50, 169);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(64, 20);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Navin";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.navinCheckBox.AutoSize = true;
+            this.navinCheckBox.Location = new System.Drawing.Point(50, 169);
+            this.navinCheckBox.Name = "navinCheckBox";
+            this.navinCheckBox.Size = new System.Drawing.Size(64, 20);
+            this.navinCheckBox.TabIndex = 5;
+            this.navinCheckBox.Text = "Navin";
+            this.navinCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // naveenCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(50, 129);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(77, 20);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Naveen";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.naveenCheckBox.AutoSize = true;
+            this.naveenCheckBox.Location = new System.Drawing.Point(50, 129);
+            this.naveenCheckBox.Name = "naveenCheckBox";
+            this.naveenCheckBox.Size = new System.Drawing.Size(77, 20);
+            this.naveenCheckBox.TabIndex = 4;
+            this.naveenCheckBox.Text = "Naveen";
+            this.naveenCheckBox.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -153,19 +154,19 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Subscribe Customer Name";
             // 
-            // comboBox1
+            // newCarComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.newCarComboBox.FormattingEnabled = true;
+            this.newCarComboBox.Items.AddRange(new object[] {
             "Honda CR-V",
             "Acura MDX",
             "BMW",
             "Audi",
             "MBenz"});
-            this.comboBox1.Location = new System.Drawing.Point(187, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 24);
-            this.comboBox1.TabIndex = 2;
+            this.newCarComboBox.Location = new System.Drawing.Point(187, 55);
+            this.newCarComboBox.Name = "newCarComboBox";
+            this.newCarComboBox.Size = new System.Drawing.Size(155, 24);
+            this.newCarComboBox.TabIndex = 2;
             // 
             // label2
             // 
@@ -176,14 +177,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Select New Car";
             // 
-            // Form1
+            // EventsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 566);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "EventsForm";
             this.Text = "Events Form";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -199,12 +200,12 @@
         private System.Windows.Forms.ComboBox carComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox nabinCheckBox;
+        private System.Windows.Forms.CheckBox nawinCheckBox;
+        private System.Windows.Forms.CheckBox navinCheckBox;
+        private System.Windows.Forms.CheckBox naveenCheckBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox newCarComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button goButton;
     }
